@@ -3,8 +3,8 @@
 Este é um projeto de website desenvolvido para destacar e homenagear alguns dos mangakas mais influentes e renomados da história. O site apresenta um carrossel com imagens dos mangakas, além de uma breve biografia de cada um.
 
 ## Demonstração
-
-![Mangakas](./src/images/mangakas.mp4)
+Aqui está um vídeo de demonstração do projeto:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9JCeltJKGrA" frameborder="0" allowfullscreen></iframe>
 
 ## Funcionalidades
 
