@@ -1,0 +1,142 @@
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: #fcfcfc;
+}
+
+.carrossel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.imagem {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+}
+
+.imagem.ativa {
+    display: block;
+    animation: mudarImagem 0.7s;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.informacoes {
+    display: none;
+    color: #ffffff;
+}
+
+.informacoes.ativa {
+    display: block;
+}
+
+.informacoes h1 {
+    font-size: 35px;
+    margin-bottom: 80px;
+    letter-spacing: 8px;
+}
+
+.informacoes .descricao {
+    width: 70%;
+    font-size: 18px;
+    line-height: 27px;
+    height: 300px;
+    overflow: auto;
+    padding-right: 15px;
+}
+
+.botoes-carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes-carrossel .botao {
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #ffffff;
+}
+
+.botoes-carrossel .botao.selecionado {
+    background-color: #1d8346;
+}
+
+@keyframes mudarImagem {
+    from {
+        opacity: 0.85;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main:after {
+    content: "";
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+    z-index: -1;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .wrapper {
+      padding: 15px 20px; 
+    }
+  
+    .wrapper h1 {
+      font-size: 24px; 
+    }
+  
+    .wrapper .input-box {
+      margin: 15px 0; 
+    }
+  
+    .wrapper .btn {
+      font-size: 14px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wrapper {
+      padding: 10px 15px; 
+    }
+  
+    .wrapper h1 {
+      font-size: 20px; 
+    }
+  
+    .wrapper .input-box input {
+      padding: 15px 20px; 
+    }
+  
+    .wrapper .btn {
+      height: 40px;
+    }
+  }
+  
